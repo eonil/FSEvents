@@ -16,7 +16,7 @@ Quickstart
 -------------
 Import.
 
-    import FSEventsUnofficialWrapper
+    import EonilFSEvents
 
 Start.
 
