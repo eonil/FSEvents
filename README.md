@@ -4,11 +4,11 @@ EonilFSEvents
 
 [![Build Status](https://api.travis-ci.org/eonil/FSEvents.svg)](https://travis-ci.org/eonil/FSEvents)
 
-It's possible to use FSEvents directly in Swift 4, but it still involves
+It's possible to use FSEvents directly in Swift, but it still involves
 many boilerplate works and subtle conversions.
 
 This library provides mostly faithful wrapper around FSEvents feature tailored
-for Swift 4.
+for Swift 5.
 
 
 
@@ -33,13 +33,13 @@ Stop.
 
 Using Full Features
 -----------------------
-Make a `EonilFSEvents`, schedule it to a GCD queue, and start.
+Make a `EonilFSEventStream`, schedule it to a GCD queue, and start.
 
-    let s = try EonilFSEvents(pathsToWatch: paths,
-                                               sinceWhen: .now,
-                                               latency: 0,
-                                               flags: [],
-                                               handler: handler)
+    let s = try EonilFSEventStream(pathsToWatch: paths,
+        sinceWhen: .now,
+        latency: 0,
+        flags: [],
+        handler: handler)
     s.setDispatchQueue(DispatchQueue.main)
     try s.start()
 
