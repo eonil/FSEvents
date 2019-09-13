@@ -43,7 +43,7 @@ public extension EonilFSEventsEventFlags {
      * There was some change in the directory at the specific path
      * supplied in this event.
      */
-    public static var none: EonilFSEventsEventFlags {
+    static var none: EonilFSEventsEventFlags {
         return EonilFSEventsEventFlags(rawValue: kFSEventStreamEventFlagNone)
     }
 
@@ -60,7 +60,7 @@ public extension EonilFSEventsEventFlags {
      * kFSEventStreamEventFlagUserDropped or
      * kFSEventStreamEventFlagKernelDropped.
      */
-    public static var mustScanSubDirs: EonilFSEventsEventFlags {
+    static var mustScanSubDirs: EonilFSEventsEventFlags {
         return EonilFSEventsEventFlags(rawValue: kFSEventStreamEventFlagMustScanSubDirs)
     }
 
@@ -77,7 +77,7 @@ public extension EonilFSEventsEventFlags {
      * kFSEventStreamEventFlagMustScanSubDirs flag; these flags (if
      * present) only provide information to help you diagnose the problem.
      */
-    public static var userDropped: EonilFSEventsEventFlags {
+    static var userDropped: EonilFSEventsEventFlags {
         return EonilFSEventsEventFlags(rawValue: kFSEventStreamEventFlagUserDropped)
     }
 
@@ -94,7 +94,7 @@ public extension EonilFSEventsEventFlags {
      * kFSEventStreamEventFlagMustScanSubDirs flag; these flags (if
      * present) only provide information to help you diagnose the problem.
      */
-    public static var kernelDropped: EonilFSEventsEventFlags {
+    static var kernelDropped: EonilFSEventsEventFlags {
         return EonilFSEventsEventFlags(rawValue: kFSEventStreamEventFlagKernelDropped)
     }
 
@@ -104,7 +104,7 @@ public extension EonilFSEventsEventFlags {
      * previously-issued event ID's are no longer valid arguments for the
      * sinceWhen parameter of the FSEventStreamCreate...() functions.
      */
-    public static var idsWrapped: EonilFSEventsEventFlags {
+    static var idsWrapped: EonilFSEventsEventFlags {
         return EonilFSEventsEventFlags(rawValue: kFSEventStreamEventFlagEventIdsWrapped)
     }
 
@@ -119,7 +119,7 @@ public extension EonilFSEventsEventFlags {
      * kFSEventStreamEventFlagHistoryDone flag is set. The client should
      * ignore the path supplied in this callback.
      */
-    public static var historyDone: EonilFSEventsEventFlags {
+    static var historyDone: EonilFSEventsEventFlags {
         return EonilFSEventsEventFlags(rawValue: kFSEventStreamEventFlagHistoryDone)
     }
 
@@ -134,7 +134,7 @@ public extension EonilFSEventsEventFlags {
      * kFSEventStreamCreateFlagWatchRoot to FSEventStreamCreate...() when
      * you created the stream.
      */
-    public static var rootChanged: EonilFSEventsEventFlags {
+    static var rootChanged: EonilFSEventsEventFlags {
         return EonilFSEventsEventFlags(rawValue: kFSEventStreamEventFlagRootChanged)
     }
 
@@ -151,7 +151,7 @@ public extension EonilFSEventsEventFlags {
      * aware of the MNT_DONTBROWSE flag that is set for volumes which
      * should not be displayed by user interface elements.
      */
-    public static var mount: EonilFSEventsEventFlags {
+    static var mount: EonilFSEventsEventFlags {
         return EonilFSEventsEventFlags(rawValue: kFSEventStreamEventFlagMount)
     }
 
@@ -166,7 +166,7 @@ public extension EonilFSEventsEventFlags {
      * unmounting a volume could uncover an arbitrarily large directory
      * hierarchy, although Mac OS X never does that.
      */
-    public static var unmount: EonilFSEventsEventFlags {
+    static var unmount: EonilFSEventsEventFlags {
         return EonilFSEventsEventFlags(rawValue: kFSEventStreamEventFlagUnmount)
     }
 
@@ -175,7 +175,7 @@ public extension EonilFSEventsEventFlags {
      * (This flag is only ever set if you specified the FileEvents flag when creating the stream.)
      */
     @available(OSX 10.7, *)
-    public static var itemCreated: EonilFSEventsEventFlags {
+    static var itemCreated: EonilFSEventsEventFlags {
         return EonilFSEventsEventFlags(rawValue: kFSEventStreamEventFlagItemCreated)
     }
 
@@ -184,7 +184,7 @@ public extension EonilFSEventsEventFlags {
      * (This flag is only ever set if you specified the FileEvents flag when creating the stream.)
      */
     @available(OSX 10.7, *)
-    public static var itemRemoved: EonilFSEventsEventFlags {
+    static var itemRemoved: EonilFSEventsEventFlags {
         return EonilFSEventsEventFlags(rawValue: kFSEventStreamEventFlagItemRemoved)
     }
 
@@ -193,7 +193,7 @@ public extension EonilFSEventsEventFlags {
      * (This flag is only ever set if you specified the FileEvents flag when creating the stream.)
      */
     @available(OSX 10.7, *)
-    public static var itemInodeMetaMod: EonilFSEventsEventFlags {
+    static var itemInodeMetaMod: EonilFSEventsEventFlags {
         return EonilFSEventsEventFlags(rawValue: kFSEventStreamEventFlagItemInodeMetaMod)
     }
 
@@ -202,7 +202,7 @@ public extension EonilFSEventsEventFlags {
      * (This flag is only ever set if you specified the FileEvents flag when creating the stream.)
      */
     @available(OSX 10.7, *)
-    public static var itemRenamed: EonilFSEventsEventFlags {
+    static var itemRenamed: EonilFSEventsEventFlags {
         return EonilFSEventsEventFlags(rawValue: kFSEventStreamEventFlagItemRenamed)
     }
 
@@ -211,7 +211,7 @@ public extension EonilFSEventsEventFlags {
      * (This flag is only ever set if you specified the FileEvents flag when creating the stream.)
      */
     @available(OSX 10.7, *)
-    public static var itemModified: EonilFSEventsEventFlags {
+    static var itemModified: EonilFSEventsEventFlags {
         return EonilFSEventsEventFlags(rawValue: kFSEventStreamEventFlagItemModified)
     }
 
@@ -220,7 +220,7 @@ public extension EonilFSEventsEventFlags {
      * (This flag is only ever set if you specified the FileEvents flag when creating the stream.)
      */
     @available(OSX 10.7, *)
-    public static var itemFinderInfoMod: EonilFSEventsEventFlags {
+    static var itemFinderInfoMod: EonilFSEventsEventFlags {
         return EonilFSEventsEventFlags(rawValue: kFSEventStreamEventFlagItemFinderInfoMod)
     }
 
@@ -229,7 +229,7 @@ public extension EonilFSEventsEventFlags {
      * (This flag is only ever set if you specified the FileEvents flag when creating the stream.)
      */
     @available(OSX 10.7, *)
-    public static var itemChangeOwner: EonilFSEventsEventFlags {
+    static var itemChangeOwner: EonilFSEventsEventFlags {
         return EonilFSEventsEventFlags(rawValue: kFSEventStreamEventFlagItemChangeOwner)
     }
 
@@ -238,7 +238,7 @@ public extension EonilFSEventsEventFlags {
      * (This flag is only ever set if you specified the FileEvents flag when creating the stream.)
      */
     @available(OSX 10.7, *)
-    public static var itemXattrMod: EonilFSEventsEventFlags {
+    static var itemXattrMod: EonilFSEventsEventFlags {
         return EonilFSEventsEventFlags(rawValue: kFSEventStreamEventFlagItemXattrMod)
     }
 
@@ -247,7 +247,7 @@ public extension EonilFSEventsEventFlags {
      * (This flag is only ever set if you specified the FileEvents flag when creating the stream.)
      */
     @available(OSX 10.7, *)
-    public static var itemIsFile: EonilFSEventsEventFlags {
+    static var itemIsFile: EonilFSEventsEventFlags {
         return EonilFSEventsEventFlags(rawValue: kFSEventStreamEventFlagItemIsFile)
     }
 
@@ -256,7 +256,7 @@ public extension EonilFSEventsEventFlags {
      * (This flag is only ever set if you specified the FileEvents flag when creating the stream.)
      */
     @available(OSX 10.7, *)
-    public static var itemIsDir: EonilFSEventsEventFlags {
+    static var itemIsDir: EonilFSEventsEventFlags {
         return EonilFSEventsEventFlags(rawValue: kFSEventStreamEventFlagItemIsDir)
     }
 
@@ -265,7 +265,7 @@ public extension EonilFSEventsEventFlags {
      * (This flag is only ever set if you specified the FileEvents flag when creating the stream.)
      */
     @available(OSX 10.7, *)
-    public static var itemIsSymlink: EonilFSEventsEventFlags {
+    static var itemIsSymlink: EonilFSEventsEventFlags {
         return EonilFSEventsEventFlags(rawValue: kFSEventStreamEventFlagItemIsSymlink)
     }
 
@@ -274,7 +274,7 @@ public extension EonilFSEventsEventFlags {
      * (This flag is only ever set if you specified the MarkSelf flag when creating the stream.)
      */
     @available(OSX 10.9, *)
-    public static var ownEvent: EonilFSEventsEventFlags {
+    static var ownEvent: EonilFSEventsEventFlags {
         return EonilFSEventsEventFlags(rawValue: kFSEventStreamEventFlagOwnEvent)
     }
     
@@ -283,7 +283,7 @@ public extension EonilFSEventsEventFlags {
      * (This flag is only ever set if you specified the FileEvents flag when creating the stream.)
      */
     @available(OSX 10.10, *)
-    public static var itemIsHardlink: EonilFSEventsEventFlags {
+    static var itemIsHardlink: EonilFSEventsEventFlags {
         return EonilFSEventsEventFlags(rawValue: kFSEventStreamEventFlagItemIsHardlink)
     }
     
@@ -291,7 +291,7 @@ public extension EonilFSEventsEventFlags {
      * (This flag is only ever set if you specified the FileEvents flag when creating the stream.)
      */
     @available(OSX 10.10, *)
-    public static var itemIsLastHardlink: EonilFSEventsEventFlags {
+    static var itemIsLastHardlink: EonilFSEventsEventFlags {
         return EonilFSEventsEventFlags(rawValue: kFSEventStreamEventFlagItemIsLastHardlink)
     }
 

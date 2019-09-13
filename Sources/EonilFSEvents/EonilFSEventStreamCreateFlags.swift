@@ -35,7 +35,7 @@ public extension EonilFSEventsCreateFlags {
     /*
      * The default.
      */
-    public static var none: EonilFSEventsCreateFlags {
+    static var none: EonilFSEventsCreateFlags {
         return EonilFSEventsCreateFlags(rawValue: kFSEventStreamCreateFlagNone)
     }
 
@@ -66,7 +66,7 @@ public extension EonilFSEventsCreateFlags {
      * seconds. This is the default behavior and is more appropriate for
      * background, daemon or batch processing apps.
      */
-    public static var noDefer: EonilFSEventsCreateFlags {
+    static var noDefer: EonilFSEventsCreateFlags {
         return EonilFSEventsCreateFlags(rawValue: kFSEventStreamCreateFlagNoDefer)
     }
 
@@ -85,7 +85,7 @@ public extension EonilFSEventsCreateFlags {
      * before creating the stream so that you have a file descriptor for
      * it and can issue an F_GETPATH fcntl() to find the current path.
      */
-    public static var watchRoot: EonilFSEventsCreateFlags {
+    static var watchRoot: EonilFSEventsCreateFlags {
         return EonilFSEventsCreateFlags(rawValue: kFSEventStreamCreateFlagWatchRoot)
     }
 
@@ -101,7 +101,7 @@ public extension EonilFSEventsCreateFlags {
      */
     @available(macOS, introduced: 10.6)
     @available(iOS, introduced: 6.0)
-    public static var ignoreSelf: EonilFSEventsCreateFlags {
+    static var ignoreSelf: EonilFSEventsCreateFlags {
         return EonilFSEventsCreateFlags(rawValue: kFSEventStreamCreateFlagIgnoreSelf)
     }
 
@@ -113,7 +113,7 @@ public extension EonilFSEventsCreateFlags {
      */
     @available(macOS, introduced: 10.7)
     @available(iOS, introduced: 6.0)
-    public static var fileEvents: EonilFSEventsCreateFlags {
+    static var fileEvents: EonilFSEventsCreateFlags {
         return EonilFSEventsCreateFlags(rawValue: kFSEventStreamCreateFlagFileEvents)
     }
 
@@ -126,7 +126,7 @@ public extension EonilFSEventsCreateFlags {
      */
     @available(macOS, introduced: 10.9)
     @available(iOS, introduced: 7.0)
-    public static var markSelf: EonilFSEventsCreateFlags {
+    static var markSelf: EonilFSEventsCreateFlags {
         return EonilFSEventsCreateFlags(rawValue: kFSEventStreamCreateFlagMarkSelf)
     }
 }
