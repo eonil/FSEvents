@@ -672,6 +672,7 @@ extension EonilFSEventStream {
      *    Non-Carbon CFM:   not available
      */
     @available(OSX 10.9, *)
+    @discardableResult
     public func setExclusionPaths(_ pathsToExclude: [String]) -> Bool {
         let pathsToExclude1 = pathsToExclude as [NSString] as NSArray as CFArray
         return FSEventStreamSetExclusionPaths(rawref, pathsToExclude1)
