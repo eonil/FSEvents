@@ -1,6 +1,8 @@
 EonilFSEvents
 =============================
-2018 Hoon H., Eonil
+Eonil
+2018 Maintenance.
+2019 Maintenance.
 
 [![Build Status](https://api.travis-ci.org/eonil/FSEvents.svg)](https://travis-ci.org/eonil/FSEvents)
 
