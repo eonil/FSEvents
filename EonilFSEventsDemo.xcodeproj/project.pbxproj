@@ -24,7 +24,7 @@
 		4513D3EE21D533C00070A7A5 /* EonilFSEventsDemoGUI.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = EonilFSEventsDemoGUI.entitlements; sourceTree = "<group>"; };
 		4513D42421D55AB30070A7A5 /* libFSEventUnofficialWrapperStream.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libFSEventUnofficialWrapperStream.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		4513D42621D55AB70070A7A5 /* libFSEventUnofficialWrapperStream.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libFSEventUnofficialWrapperStream.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		BA53C7B7232B902600838304 /* FSEvents */ = {isa = PBXFileReference; lastKnownFileType = folder; name = FSEvents; sourceTree = "<group>"; };
+		D7675AAE234578BD002AC0F7 /* FSEvents */ = {isa = PBXFileReference; lastKnownFileType = folder; name = FSEvents; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -42,7 +42,7 @@
 		4513D3CB21D5334D0070A7A5 = {
 			isa = PBXGroup;
 			children = (
-				BA53C7B7232B902600838304 /* FSEvents */,
+				D7675AAE234578BD002AC0F7 /* FSEvents */,
 				4513D3E321D533BE0070A7A5 /* EonilFSEventsDemoGUI */,
 				4513D3D721D533B20070A7A5 /* Products */,
 				4513D41F21D533EB0070A7A5 /* Frameworks */,
@@ -273,12 +273,10 @@
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Manual;
 				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEVELOPMENT_TEAM = "";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
@@ -306,7 +304,6 @@
 				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = Eonil.FSEventsDemoGUI;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = macosx;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -347,12 +344,10 @@
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Manual;
 				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEVELOPMENT_TEAM = "";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
@@ -373,7 +368,6 @@
 				MTL_FAST_MATH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = Eonil.FSEventsDemoGUI;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = macosx;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
