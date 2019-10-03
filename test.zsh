@@ -11,4 +11,3 @@ CONFIG=SYMROOT=`pwd`/build
 cd $DEMO
 xcodebuild -project $DEMO.xcodeproj -target $DEMO -configuration Debug $CONFIG
 xcodebuild -project $DEMO.xcodeproj -target $DEMO -configuration Release $CONFIG
-#xcodebuild -project EonilFSEventsDemo1.xcodeproj SYMROOT=`pwd`/build
