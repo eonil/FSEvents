@@ -24,7 +24,7 @@
 		4513D3EE21D533C00070A7A5 /* EonilFSEventsDemoGUI.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = EonilFSEventsDemoGUI.entitlements; sourceTree = "<group>"; };
 		4513D42421D55AB30070A7A5 /* libFSEventUnofficialWrapperStream.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libFSEventUnofficialWrapperStream.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		4513D42621D55AB70070A7A5 /* libFSEventUnofficialWrapperStream.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libFSEventUnofficialWrapperStream.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		D7675AAE234578BD002AC0F7 /* FSEvents */ = {isa = PBXFileReference; lastKnownFileType = folder; name = FSEvents; sourceTree = "<group>"; };
+		D7675AB023457A86002AC0F7 /* FSEvents */ = {isa = PBXFileReference; lastKnownFileType = folder; name = FSEvents; path = ..; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -42,7 +42,7 @@
 		4513D3CB21D5334D0070A7A5 = {
 			isa = PBXGroup;
 			children = (
-				D7675AAE234578BD002AC0F7 /* FSEvents */,
+				D7675AB023457A86002AC0F7 /* FSEvents */,
 				4513D3E321D533BE0070A7A5 /* EonilFSEventsDemoGUI */,
 				4513D3D721D533B20070A7A5 /* Products */,
 				4513D41F21D533EB0070A7A5 /* Frameworks */,
@@ -122,7 +122,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 4513D3CF21D5334D0070A7A5 /* Build configuration list for PBXProject "EonilFSEventsDemo" */;
+			buildConfigurationList = 4513D3CF21D5334D0070A7A5 /* Build configuration list for PBXProject "EonilFSEventsDemoGUI" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -378,7 +378,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		4513D3CF21D5334D0070A7A5 /* Build configuration list for PBXProject "EonilFSEventsDemo" */ = {
+		4513D3CF21D5334D0070A7A5 /* Build configuration list for PBXProject "EonilFSEventsDemoGUI" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				4513D3D021D5334D0070A7A5 /* Debug */,
