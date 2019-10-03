@@ -63,10 +63,10 @@ Therefore, it could look like it cannot receive file system events
 out of the container. To receive file system events out of
 container, you should turn off sandboxing.
 
-At this point, `xcodebuild` doesn't work for GUI demo project.
-It fails on dependency resolution.
-You can open and run the demo project in Xcode GUI. 
-CLI demo works with `swift build`.
+At this point, `xcodebuild` fails on dependency resolution for packages.
+I don't know why. It seems Xcode have some issues with it.
+To work around, just set `SYMROOT` explicitly.
+See `test.zsh` how to set it.
 
 
 
