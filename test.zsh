@@ -3,10 +3,12 @@
 swift build
 exit 0
 
-# Building Xcode project with package dependencies on command-line 
-# doesn't work at this point. It seems Xcode have some issues here.
-# Open this project with Xcode app and build it there. 
-# It should work.
+# I don't know why but "xcodebuild" doesn't work here right now.
+# This is weired because "xcodebuild" works with another project.
+# It seems this issue is related to project location as demo project
+# is inside of a package.
+# Anyway, I just disabled "xcodebuild" 
+# until I figure out how to make it work.
 DEMO=EonilFSEventsDemoGUI
 cd $DEMO
 xcodebuild -project $DEMO.xcodeproj -target $DEMO -configuration Debug

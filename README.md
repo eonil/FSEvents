@@ -9,7 +9,7 @@ Eonil
 It's possible to use FSEvents directly in Swift, but it still involves
 many boilerplate works and subtle conversions.
 
-This library provides mostly faithful wrapper around FSEvents feature tailored
+This library provides mostly-faithful wrapper around FSEvents feature tailored
 for Swift 5.
 
 
@@ -50,15 +50,23 @@ After use, deinitialize by stop, invalidate(unschedule).
     s.stop()
     s.invalidate()
 
-As soon as the last strong reference removed, the stream will be destroyed.
+As soon as the last strong reference gets removed,
+the stream will be destroyed.
 
 
 
 Caveats
 ----------
-In the Xcode, AppKit apps are configured to use Sandbox by default. Sandboxed apps cannot access files out of its container.
-Therefore, it could look like it cannot receive file system events out of the container. To receive file system events out of
+In the Xcode, AppKit apps are configured to use Sandbox by default.
+Sandboxed apps cannot access files out of its container.
+Therefore, it could look like it cannot receive file system events
+out of the container. To receive file system events out of
 container, you should turn off sandboxing.
+
+At this point, `xcodebuild` doesn't work for GUI demo project.
+It fails on dependency resolution.
+You can open and run the demo project in Xcode GUI. 
+CLI demo works with `swift build`.
 
 
 
