@@ -8,8 +8,8 @@
 
 import Foundation
 
-public struct EonilFSEventsEventID: Hashable {
-    internal let rawValue: FSEventStreamEventId
+public struct EonilFSEventsEventID: Hashable, RawRepresentable {
+    public let rawValue: FSEventStreamEventId
     public init(rawValue: FSEventStreamEventId) {
         self.rawValue = rawValue
     }
