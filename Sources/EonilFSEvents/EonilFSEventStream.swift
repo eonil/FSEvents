@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import CoreServices
 
 /// Replicate `FSEventStream`'s features and interface as close as possible in Swift-y interface.
 /// Apple can provide official wrapper in future release, and the name of the future wrapper type
