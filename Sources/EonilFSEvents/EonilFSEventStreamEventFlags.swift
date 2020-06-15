@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import CoreServices
 
 /// Flags that can be passed to your `EonilFSEvents`'s handler function.
 /*
