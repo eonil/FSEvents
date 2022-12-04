@@ -145,7 +145,9 @@ public final class EonilFSEventStream {
         rawref = newRawref
     }
     deinit {
-        // `rawref` is a CFType, so will be deallocated automatically.
+        // It seems `rawref` does not get deallocated according to Instruments:
+        // Run EonilFSEventsDemoGUI via Instruments with "Leaks" and close the main window.
+        FSEventStreamRelease(self.rawref)
     }
 }
 

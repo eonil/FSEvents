@@ -29,6 +29,11 @@ class ViewController: NSViewController, NSTableViewDataSource, NSTableViewDelega
             for: ObjectIdentifier(self),
             with: { [weak self] e in self?.process(fileSystemEvent: e) })
     }
+
+    override func viewDidDisappear() {
+        EonilFSEvents.stopWatching(for: ObjectIdentifier(self))
+    }
+
     deinit {
         EonilFSEvents.stopWatching(for: ObjectIdentifier(self))
     }
