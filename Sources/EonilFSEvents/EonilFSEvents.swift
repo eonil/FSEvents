@@ -39,7 +39,7 @@ public struct EonilFSEvents {
     }
     public static func stopWatching(for id: ObjectIdentifier) {
         assert(Thread.isMainThread)
-        assert(watchers[id] != nil)
+
         guard let s = watchers[id] else { return }
         s.stop()
         s.invalidate()
